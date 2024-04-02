@@ -1,0 +1,142 @@
+/* Definindo paleta de cores */
+/* Paleta de Cores: */
+/* - Azul Escuro: #005c99 */
+/* - Azul Claro: #8ab8e6 */
+/* - Azul Meio Tom: #ACE2E1 */
+/* - Azul : #219ebc*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ACE2E1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative; /* Adicionando posicionamento relativo ao contêiner */
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+    z-index: 1; /* Definindo um índice Z para o contêiner */
+}
+
+header {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+nav {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #005c99;
+    display: inline-block;
+    transition: width 0.3s;
+    font-size: 25pt;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #005c99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+main {
+    padding: 20px 0;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+
+}
+
+section {
+    margin-bottom: 40px;
+   
+}
+
+h2 {
+    color: #005c99;
+}
+
+.foto-rosto img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.foto-biografia img {
+    max-width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+
+.foto-circular {
+    position: absolute;
+    top: -10px;
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translateX(-50%); /* Movendo a foto para a esquerda metade de sua largura */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    background-color: #ccc;
+    z-index: 2; /* Definindo um índice Z maior para a foto circular */
+}
+
+.foto-circular img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+p {
+    text-align: justify;
+    font-family: Arial;
+}
+#video {
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centralizando horizontalmente */
+    align-items: center; /* Centralizando verticalmente */
+    margin-top: 50px; /* Adicionando algum espaço acima do vídeo */
+    margin-bottom: 50px; /* Adicionando algum espaço abaixo do vídeo */
+}
+
+.center-video {
+    max-width: 80%; /* Definindo uma largura máxima para o vídeo */
+    height: auto; /* Permitindo que a altura seja ajustada dinamicamente */
+}
+#newsletter{
+    font-size: 9px;
+}

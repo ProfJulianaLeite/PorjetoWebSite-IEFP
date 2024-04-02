@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Lisboa</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        /* Estilos CSS para centralizar a div */
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Define a altura da div para ocupar a altura da janela de visualização */
+        }
+
+        /* Estilos CSS para o iframe do mapa */
+        iframe {
+            width: 600px;
+            height: 450px;
+            border: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>BNP Paribas</h1>
+    <!-- Div que envolve o mapa -->
+    <div class="map-container">
+        <iframe 
+            width="600" 
+            height="450" 
+            style="border:0" 
+            load="lazy" 
+            allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=BNP%20Paribas&key=AIzaSyBzSiFhE0pDf58-3mr5DXFyF7v02tZjC1Y">
+        </iframe>
+    </div>
+</body>
+</html>

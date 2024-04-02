@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Adicionando atributo "lang" para indicar a língua -->
+    <html lang="pt-br">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Adicionando o atributo "title" para fornecer uma dica sobre o conteúdo da imagem -->
+<div class="foto-circular">
+        <img src="rosto.jpg" alt="Juliana Leite" title="Foto de Juliana Leite">
+</div>
+
+<div class="container">
+    <header>
+        <h1>Juliana Leite</h1>
+        <nav>
+            <ul>
+                <li><a href="#bio">Biografia</a></li>
+                <!-- Adicionando atributos "hreflang" e "lang" para indicar o idioma e o país -->
+                <li><a href="portfolio.html" hreflang="pt-br" lang="pt-br">Portfólio</a></li>
+                <li><a href="#video">Final Nacional 2023</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bio">
+            <h2>Biografia</h2>
+            <p>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and scrambled it to make a type 
+specimen book. It has survived not only five centuries, but also the leap into 
+electronic typesetting, remaining essentially unchanged. It was popularised in 
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+and more recently with desktop publishing software like Aldus PageMaker including versions 
+of Lorem Ipsum.
+Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+           <!-- Adicionando atributo "title" para fornecer uma dica sobre o conteúdo da imagem -->
+           <div class="foto-biografia">
+            	<img src="artista.jpg" alt="Juliana Leite" title="Foto da artista Juliana Leite">
+    	   </div>
+
+        </section>
+
+        <section id="video">
+            <!-- Adicionando atributo "title" para fornecer uma dica sobre o conteúdo do vídeo -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mdjfJtDwzns?si=vOp713signCiVnal" title="Technivation Girls Portugal 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="newsletter">
+            <h4>Quer receber notícias sobre o Technovation Portugal, inscreva-se:</h4>
+            <form action="/action_page.php">
+                <label for="fname">Melhor e-mail:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>

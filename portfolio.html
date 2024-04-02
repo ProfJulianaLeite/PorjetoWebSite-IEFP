@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            Alguns momentos inesquecíveis <span style="color: red;">&#x2764;</span>
+        </header>
+        
+        <div class="carrossel">
+            <img src="imagem1.jpeg" alt="Imagem 1">
+            <img src="imagem3.jpeg" alt="Imagem 3">
+            <img src="imagem4.jpeg" alt="Imagem 4">
+            <img src="imagem5.jpeg" alt="Imagem 5">
+            <img src="imagem6.jpeg" alt="Imagem 6">
+            <img src="imagem7.jpeg" alt="Imagem 7">
+            <img src="imagem8.jpeg" alt="Imagem 8">
+            <img src="imagem9.jpeg" alt="Imagem 9">
+            <img src="imagem10.jpeg" alt="Imagem 10">
+            <img src="imagem11.jpeg" alt="Imagem 11">
+            <img src="imagem12.jpeg" alt="Imagem 12">
+            
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            
+        </div>
+        <!-- Adicionando a tag address -->
+    <address>
+        Onde aconteceu?
+        <a href="mapa.html" hreflang="pt-br" lang="pt-br">Rua Exemplo, Número 123</a><br>
+        Cidade Exemplo, Estado Exemplo<br>
+        CEP: 12345-678<br>
+        País: Portugal
+    </address>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+
+        function prevSlide() {
+            showSlides(slideIndex -= 1);
+        }
+
+        function nextSlide() {
+            showSlides(slideIndex += 1);
+        }
+
+        function showSlides(n) {
+            let slides = document.querySelectorAll('.carrossel img');
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let slide of slides) {
+                slide.style.display = 'none';
+            }
+            slides[slideIndex - 1].style.display = 'block';
+        }
+
+        showSlides(slideIndex);
+    </script>
+</body>
+</html>

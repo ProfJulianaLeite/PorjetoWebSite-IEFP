@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ACE2E1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1;
+}
+
+header {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.carrossel {
+    position: relative;
+    display: flex;
+    overflow-x: auto; /* Adicionando overflow-x para criar o efeito de carrossel */
+}
+
+.carrossel img {
+    max-width: 100%; /* Definindo a largura das imagens como 100% do contêiner */
+    margin-right: 10px; /* Adicionando um espaço entre as imagens */
+    flex: 0 0 auto; /* Definindo o tamanho flexível para que as imagens mantenham sua largura original */
+    display: none; /* Ocultando a barra de rolagem padrão do navegador */
+}
+
+.carrossel::-webkit-scrollbar {
+    display: block; /* Exibindo apenas a primeira imagem inicialmente */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
